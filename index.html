@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUSALEX - Kaydol ve Oturum Aç</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Oturum Aç Sayfası -->
+    <div id="oturumAc" class="page active">
+        <div class="container">
+            <h1>Oturum Aç</h1>
+            <p>Öğrenim yolculuğunuza devam etmek için oturum açın.</p>
+            <button class="btn btn-google">Google ile devam et</button>
+            <div class="separator"><span>veya</span></div>
+            <form>
+                <div class="form-group">
+                    <label for="email">E-posta</label>
+                    <input type="email" id="email" placeholder="E-posta adresinizi girin" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input type="password" id="password" placeholder="Şifrenizi girin" required>
+                </div>
+                <button type="submit" class="btn">Oturum Aç</button>
+            </form>
+            <div class="separator"><span>veya</span></div>
+            <button class="btn btn-organization">Kuruluşunuzla oturum aç</button>
+            <p>Hesabınız yok mu? <a href="#" class="link" onclick="showPage('kaydol')">Kaydol</a></p>
+        </div>
+    </div>
+
+    <!-- Kaydol Sayfası -->
+    <div id="kaydol" class="page">
+        <div class="container">
+            <h1>Kaydol</h1>
+            <p>Yeni bir hesap oluşturun.</p>
+            <button class="btn btn-google">Google ile devam et</button>
+            <div class="separator"><span>veya</span></div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Adınız</label>
+                    <input type="text" id="name" placeholder="Adınızı girin" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-posta</label>
+                    <input type="email" id="email" placeholder="E-posta adresinizi girin" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input type="password" id="password" placeholder="Şifrenizi girin" required>
+                </div>
+                <button type="submit" class="btn">Kaydol</button>
+            </form>
+            <div class="separator"><span>veya</span></div>
+            <button class="btn btn-organization">Kuruluşunuzla kaydol</button>
+            <p>Zaten bir hesabınız var mı? <a href="#" class="link" onclick="showPage('oturumAc')">Oturum Aç</a></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
